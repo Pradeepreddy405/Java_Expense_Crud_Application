@@ -1,5 +1,0 @@
-com/devops/expense/service/ExpenseService.class
-com/devops/expense/controller/ExpenseController.class
-com/devops/expense/ExpenseApplication.class
-com/devops/expense/model/Expense.class
-com/devops/expense/repository/ExpenseRepository.class
