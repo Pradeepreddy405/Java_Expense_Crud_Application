@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Expense Tracker</h1>
+        <p>Manage your daily expenses</p>
+    </header>
+
+    <main class="container">
+
+        <section class="summary">
+            <h2>Total Expenses</h2>
+            <p id="totalAmount">₹0.00</p>
+        </section>
+
+        <section class="form-section">
+            <h2 id="formTitle">Add New Expense</h2>
+
+            <form id="expenseForm">
+                <input type="hidden" id="expenseId">
+
+                <label for="title">Expense Title</label>
+                <input type="text" id="title" placeholder="Example: Breakfast" required>
+
+                <label for="category">Category</label>
+                <input type="text" id="category" placeholder="Example: Food" required>
+
+                <label for="amount">Amount (₹)</label>
+                <input type="number" id="amount" min="0.01" step="0.01" placeholder="Enter amount" required>
+
+                <label for="description">Description</label>
+                <input type="text" id="description" placeholder="Enter description">
+
+                <label for="expenseDate">Expense Date</label>
+                <input type="date" id="expenseDate" required>
+
+                <div class="form-buttons">
+                    <button type="submit" id="submitButton">Add Expense</button>
+                    <button type="button" id="cancelButton" class="cancel" hidden>Cancel</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h2>Expense History</h2>
+            <p id="message"></p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expenseTable">
+                        <tr>
+                            <td colspan="7">Loading expenses...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

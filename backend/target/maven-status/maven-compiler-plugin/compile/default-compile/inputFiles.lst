@@ -1,0 +1,5 @@
+/home/ec2-user/Expense-Tracker/backend/src/main/java/com/devops/expense/ExpenseApplication.java
+/home/ec2-user/Expense-Tracker/backend/src/main/java/com/devops/expense/controller/ExpenseController.java
+/home/ec2-user/Expense-Tracker/backend/src/main/java/com/devops/expense/model/Expense.java
+/home/ec2-user/Expense-Tracker/backend/src/main/java/com/devops/expense/repository/ExpenseRepository.java
+/home/ec2-user/Expense-Tracker/backend/src/main/java/com/devops/expense/service/ExpenseService.java
